@@ -1,0 +1,30 @@
+<sly data-sly-use.card="com.adobe.aem.guides.aemcomponents.core.models.CardModel"></sly>
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html" />
+
+<div class="cmp-card" data-sly-test="${card.title}"
+     data-sly-test.hasContent="${card.imageResource || card.pretitle || card.title || card.description || card.actions.size > 0}"
+>
+    <picture data-sly-test.image="${card.imageResource}"
+        class="cmp-card__image">
+        <img src="${image.fileReference}"
+             alt="${image.alt}" />
+    </picture>
+    <section>
+        <h4 class="cmp-card__title">
+            ${card.title}
+        </h4>
+        <div class="cmp-card__description">
+            ${card.description @context='html'}
+        </div>
+        <div data-sly-test="${card.actionsEnabled}"
+             data-sly-list.button="${card.actions}">
+            <a data-sly-attribute="${button.link.htmlAttributes}"
+               data-sly-unwrap="${!button.link.valid || card.actions.empty}"
+                class="cmp-link">
+                <span class="cmp-link__text">${button.title}</span>
+            </a>
+        </div>
+    </section>
+</div>
+
+<sly data-sly-call="${templates.placeholder @ isEmpty=!hasContent, classAppend='cmp-card'}"></sly>

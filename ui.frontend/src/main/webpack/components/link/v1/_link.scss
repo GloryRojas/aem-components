@@ -1,0 +1,10 @@
+.cmp-link {
+  color: $primary-500;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+  &__screen-reader-only {
+    display: none;
+  }
+}
