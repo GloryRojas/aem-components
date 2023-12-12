@@ -22,6 +22,10 @@ For customize the markup you need to modify the html file placed at:
 
 It has styles from this [figma file](https://www.figma.com/file/QdQLlt2r107dx9niF0Bj46/Free-Design-system-by-Severovsky-(Community)?type=design&node-id=224-15168&mode=design&t=gwHG7qTsCNohfxXq-0). 
 
+### Tabs
+
+It is a container component to allows the content authors to organize page content within multiple tabs. 
+Currently, doesn't have any customization only styles based on [this design](https://www.figma.com/file/QdQLlt2r107dx9niF0Bj46/Free-Design-system-by-Severovsky-(Community)?node-id=210%3A37406&mode=dev).
 
 ## Clientlibs
 
