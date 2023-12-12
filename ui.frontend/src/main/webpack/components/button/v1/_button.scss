@@ -1,0 +1,14 @@
+.cmp-button {
+  border: none;
+  border-radius: $spacing-xs;
+  margin: $spacing-2xs 0;
+  background-color: $primary-500;
+  padding: $spacing-s $spacing-2xl;
+  cursor: pointer;
+  &:hover {
+    background-color: $primary-600;
+  }
+  &__text {
+    color: $gray-00;
+  }
+}
