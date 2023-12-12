@@ -1,0 +1,14 @@
+.cmp-tabs {
+  &__tab {
+    color: $gray-500;
+    font-weight: 300;
+    padding: $spacing-2xl $spacing-xs;
+    border: none;
+    &:hover {
+      box-shadow: 0px -3px 0px 0px $primary-100 inset;
+    }
+  }
+  &__tab--active {
+    box-shadow: 0px -3px 0px 0px $primary-500 inset;
+  }
+}
